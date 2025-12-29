@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizQuest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  <div class="quiz">
+    <div class="start-page">
+      <h1>QuizQuest</h1>
+      <div class="name-box">
+        <p>Enter your name : </p>
+        <input type="text" placeholder="Your name" id="user">
+        <button class="btn">Start Quiz</button>
+      </div>
+    </div>
+
+    <div class="quiz-body" style="display:none;">
+      <header class="header">
+        <div class="ques-count">
+          <span id="current">0</span>/<span id="total">10</span>
+        </div>
+
+        <h1 class="heading">QuizQuest</h1>
+
+        <div class="timer">
+          <span id="time">10</span>s
+        </div>
+      </header>
+      <div id="question" class="ques-text"></div>
+
+      <ul id="options" class="options">
+
+      </ul>
+      <div class="score">
+        Score :<span id="curr-score">0</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
